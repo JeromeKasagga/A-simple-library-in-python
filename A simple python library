@@ -1,0 +1,51 @@
+# A program creating a library
+#It accepts input about books, and then store in a list, it can display all the books
+#It can also search for a book by title, author, or year of publication
+class Library:
+    # initialize the library
+    def __init__(self):
+        # empty list of books
+        self.books = []
+
+
+    # Method to add new books
+    def add_new_book(self):
+        book_name = input("Enter the book name: ")
+        book_author = input("Enter the author: ")
+        book_genre = input("Enter the genre: ")
+        book_ISBN = input("Enter the ISBN: ")
+        year_published = input("Enter the year published: ")
+
+
+    #Dictionary to represent the book 
+    book = {
+            "name": "book_name",
+            "author":"book_author",
+            "genre": "book_genre",
+            "ISBN": "book_ISBN",
+            "year": "year_published"
+    }
+
+    self.books.append(book) #Add the book to the library
+
+    #method to display the books in the library
+    def display_books(self):
+        if not self.books:
+            print("No books in the library")
+        else:
+            for book in self.books:
+                print(f"Title: {self.book_name}")
+                print(f"Author: {self.book_author}")
+                print(f"Genre: {self.book_genre}")
+                print(f"ISBN: {self.book_ISBN}")
+                print(f"Year Published: {self.year_published}")
+                print("-------------------")
+
+
+
+
+#Putting the library in a variable
+
+
+
+     
